@@ -2,35 +2,20 @@ import random
 import sys
 import os
 
-# if else elif == != > >= <=
+for x in range(0, 10):
+    print(x, ' ', end="")  # output x indet with space and no-wrap
 
-age = 18
+print('\n')
 
-if age >= 16:
-    print('you`re old enough to drive')
-else:
-    print('you`re not old enough to drive')
+grocery_list = ['Juice', 'Tomatoes', 'Potatoes', 'Bananas']
 
-if age >= 21:
-    print('You are old enough to drive a tractor trailer')
-elif age >= 16:
-    print('You are old enough to drive a car')
-else:
-    print('You are not ol enough to drive')
+for y in grocery_list:
+    print(y)
 
-if(age >= 1) and (age <= 18):
-    print('You get a birthday')
-elif (age == 21) or (age >= 65):
-    print("You get a birthday")
-elif age == 30:
-    print("you don't get a birthday")
-else:
-    print("You get a birthday yeah")
+for x in [2, 4, 6, 8, 10]:
+    print(x)
 
-'''
-you`re old enough to drive
-You are old enough to drive a car
-You get a birthday
-
-Process finished with exit code 0
-'''
+num_list = [[1, 2, 3], [10, 20, 30], [100, 200, 330]]
+for x in range(0, len(num_list)): # range(0, 3)
+    for y in range(0, len(num_list)):
+        print(num_list[x][y])
