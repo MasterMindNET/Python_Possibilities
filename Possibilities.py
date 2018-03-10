@@ -2,14 +2,24 @@ import random
 import sys
 import os
 
-# you can't change tuple(кортеж) after it's been created!!!
+super_villains = { # супер злодеи
+    'Fiddler': 'Isaac Bowin',
+    'Captain Cold': 'Leonard Snart',
+    'Weather Wizard': 'Mark Mardon',
+    'Mirror Master': 'Sam Scudder',
+    'Pied Piper': 'Thomas Peterson'
+}
 
-pi_tuple = (3, 1, 4, 1, 5, 6)
+print(super_villains['Captain Cold'])
 
-new_list = list(pi_tuple)
-new_list.append(1)
-print(new_list)
-new_tuple = tuple(new_list)
-print(new_tuple)
+del super_villains['Fiddler']
 
-print(len(new_tuple), min(new_tuple), max(new_tuple))
+super_villains['Pied Piper'] = 'Hartley Rathaway'
+
+print(len(super_villains))
+
+print(super_villains.get('Pied Piper'))
+
+print(super_villains.keys())
+
+print(super_villains.values())
