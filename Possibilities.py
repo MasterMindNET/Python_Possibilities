@@ -2,24 +2,35 @@ import random
 import sys
 import os
 
-super_villains = { # супер злодеи
-    'Fiddler': 'Isaac Bowin',
-    'Captain Cold': 'Leonard Snart',
-    'Weather Wizard': 'Mark Mardon',
-    'Mirror Master': 'Sam Scudder',
-    'Pied Piper': 'Thomas Peterson'
-}
+# if else elif == != > >= <=
 
-print(super_villains['Captain Cold'])
+age = 18
 
-del super_villains['Fiddler']
+if age >= 16:
+    print('you`re old enough to drive')
+else:
+    print('you`re not old enough to drive')
 
-super_villains['Pied Piper'] = 'Hartley Rathaway'
+if age >= 21:
+    print('You are old enough to drive a tractor trailer')
+elif age >= 16:
+    print('You are old enough to drive a car')
+else:
+    print('You are not ol enough to drive')
 
-print(len(super_villains))
+if(age >= 1) and (age <= 18):
+    print('You get a birthday')
+elif (age == 21) or (age >= 65):
+    print("You get a birthday")
+elif age == 30:
+    print("you don't get a birthday")
+else:
+    print("You get a birthday yeah")
 
-print(super_villains.get('Pied Piper'))
+'''
+you`re old enough to drive
+You are old enough to drive a car
+You get a birthday
 
-print(super_villains.keys())
-
-print(super_villains.values())
+Process finished with exit code 0
+'''
